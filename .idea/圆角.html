@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角</title>
+    <style>
+        .item{width:100px;margin: 0 auto;font-weight: bold;font: 14px Arial;clear:float;}
+        /*.item{background:aliceblue;}*/
+        p{text-align: center;line-height: 16px;margin: 0;background: aqua;border: solid 1px #000;border-top-width: 0px}
+        /*不要指望在这里进行什么嵌套，因为本身p就和div是同一级别的。*/
+        .item div{background: aqua;height: 1px;overflow: hidden;border-left: solid 1px #000;border-right: solid 1px #000;}
+        .item .row1{margin:0 5px;border-top: solid 1px black}
+        .item .row2{margin:0 3px;border: 0 2px;}
+        .item .row3{margin:0 2px}
+        .item .row4{margin:0 1px;height: 2px;}
+
+    </style>
+</head>
+<body>
+<div class="item">
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <p>HOME</p>
+
+</div>
+</body>
+</html>

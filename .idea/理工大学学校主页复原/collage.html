@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MainTitle</title>
+<style>
+    .logo{
+        background: url("timg.jpg") no-repeat;
+        height: 65px;
+        width: 400px;
+        float: left;
+    }
+    .mianmenu{}
+    ul{float: right;list-style: none;padding: 0px;}
+    li{float:left;margin: 4px;}
+    .clear{clear: both;}
+    a{text-decoration: none;color: blue;font-size: 12px;}
+    a:hover{display:block;background-color:darkgrey;}
+/*你会发现一个精彩的跳动效果！当然，这并不是什么js效果！这是因为使用display设置为block时，display在ul这个流中是要自动定到上边界的*/
+
+</style>
+</head>
+<body>
+<!--整个界面部分-->
+<div class="container">
+<!--头部部分    -->
+    <div class="header">
+<!-- 头部顶端（校徽和导航栏）       -->
+        <div class="header-top">
+            <div class="logo">
+
+            </div>
+            <div class="mianmenu">
+                <ul>
+                    <li><a href="#">邮箱</a> </li>
+                    <li><a href="#">校长信息网</a></li>
+                    <li><a href="#"> 信息公开网</a></li>
+                    <li><a href="#"> 三城联创</a></li>
+                    <li><a href="#"> 博士后招收</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </div>
+<!--页面部分-->
+    <div class="pagecontent"></div>
+<!--底部部分-->
+    <div class="footer"></div>
+</div>
+</body>
+</html>
