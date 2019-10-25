@@ -4,20 +4,60 @@
     <meta charset="UTF-8">
     <title>MainTitle</title>
 <style>
-    .logo{
-        background: url("timg.jpg") no-repeat;
-        height: 65px;
-        width: 400px;
-        float: left;
-    }
-    .mianmenu{}
-    ul{float: right;list-style: none;padding: 0px;}
-    li{float:left;margin: 4px;}
+/*全局设置区*/
+    body{background: antiquewhite;margin: 0px;}
+    /*.logo{display: block;overflow: hidden;background: url("timg.jpg") no-repeat;width: 980;height: 65; !*float: left;*!}*/
+
+    .container{width: 980px;margin: 0 auto;background: white;}
+    /*头部整体设置*/
+    .header{margin: 0 auto;display:block;font-size: 12px;}
+    /*最顶部nav设置*/
+    .header-top{width: 980px;background: white;margin: 0 auto; /*margin: 0 auto;*/}
+    /*非常重要的一点在chrome上面看见惊叹号的原因，是你的代码写错了！*/
+/*头部nav区域具体*/
+   .logo{display: block;overflow: hidden;background: url("timg.jpg") no-repeat;width: 980;height: 65; /*float: left;*/}
+   .logo ul{float: right;list-style: none;padding: 0px;}
+    .logo li{float:left;margin: 4px;}
     .clear{clear: both;}
     a{text-decoration: none;color: blue;font-size: 12px;}
     a:hover{display:block;background-color:darkgrey;}
 /*你会发现一个精彩的跳动效果！当然，这并不是什么js效果！这是因为使用display设置为block时，display在ul这个流中是要自动定到上边界的*/
 
+   /*中部轮播图部分设置*/
+
+   .main-image img{ display:block;margin: 0;}
+    .main-image{width: 980px;
+        /*height: 270px;*/
+        margin: 0 auto;
+    }
+    /*底部导航栏设置*/
+    .main-nav{width: 980px;margin: 0 auto;background: darkblue;}
+    .main-nav li{float: left;padding-right: 2px;margin-right:5px;padding: 3px 4px 3px 4px;display: block; height: 20px;}
+    .main-nav ul{list-style: none;padding: 2px; margin: 0px;}
+    .main-nav a{ display: block;line-height: 20px; text-decoration: none;color: white;background: blue;}
+    .main-nav .firstli{margin-left: 10px;}
+    /*底部信息接入口设置*/
+    .information{background: darkgrey;}
+
+
+
+
+
+
+
+
+
+
+/*底部footer    */
+    .footer{background: #006699;padding: 30px;color: white;}
+    /*两个图片共同的性质*/
+    #jpg{float: left;}
+/* 单个设置   */
+    .wechat{padding-left:160px;}
+    .wechat2{padding-left: 40px;}
+    p{font-size: 12px;text-align: center;}
+    .left{float: right;padding-right:160px; }
+    .duanzi{text-align: center;float: left;padding-left: 40px;}
 </style>
 </head>
 <body>
@@ -29,8 +69,8 @@
         <div class="header-top">
             <div class="logo">
 
-            </div>
-            <div class="mianmenu">
+
+<!--因为设置为背景，所以这些个li里面的内容可以直接到上面去-->
                 <ul>
                     <li><a href="#">邮箱</a> </li>
                     <li><a href="#">校长信息网</a></li>
@@ -38,15 +78,80 @@
                     <li><a href="#"> 三城联创</a></li>
                     <li><a href="#"> 博士后招收</a></li>
                 </ul>
-                <div class="clear"></div>
+            <div class="clear"></div>
             </div>
-        </div>
 
+                <div class="clear"></div>
+        </div>
+<!--轮播图的位置-->
+<!--暂时用一个照片代替-->
+        <div class="main-image">
+            <img src="mainimg.png">
+        </div>
+<!-- 主选单-->
+        <div class="main-nav">
+
+            <ul>
+                <li class="firstli"><a href="#"></a> 学校概况</li>
+                <li><a href="#"> 办公网</a> </li>
+                <li><a href="#">教学网</a> </li>
+                <li><a href="#">机构设置</a> </li>
+                <li><a href="#">科学研究</a> </li>
+                <li><a href="#">科学研究</a> </li>
+                <li><a href="#">科学研究</a></li>
+                <li><a href="#">科学研究</a></li>
+                <li><a href="#">科学研究</a></li>
+                <li><a href="#">科学研究</a></li>
+                <li><a href="#">科学研究</a></li>
+                <li><a href="#">科学研究</a></li>
+                <li><a href="#">科学研究</a></li>
+                <li><a href="#">科学研究</a></li>
+            </ul>
+         <div class="clear"></div>
+        </div>
+        <!--信息滚动播放装置-->
+        <div class="information">信心滚动播放</div>
     </div>
 <!--页面部分-->
-    <div class="pagecontent"></div>
+    <div class="pagecontent">
+
+
+<div style="height: 1000px "></div>
+
+
+
+
+
+
+
+    </div>
 <!--底部部分-->
-    <div class="footer"></div>
+    <div class="footer">
+
+        <div class="wechat" id="jpg"><img  width="80" src="weixinCode.jpg">
+        <p>官方微信</p>
+        </div>
+        <div class="wechat2" id="jpg"><img width="80" src="weiboCode2.jpg">
+        <p>官方微博</p>
+        </div>
+        <div class="left"><img width="80" src="blue.png"></div>
+        <div class="duanzi">
+        <p>沈阳工业大学欢迎你</p>
+        <p>中央校区:沈阳经济技术开发区沈辽西路111号</p>
+        <p>兴顺校区:沈阳市铁西区兴顺街南十三路1号</p>
+        <p>辽阳分校:辽宁省辽阳市宏伟区光华街30号</p>
+        <p>辽ICP备05001369号-1</p>
+        </div>
+        <div class="clear"></div>
+
+
+
+
+
+
+
+
+    </div>
 </div>
 </body>
 </html>
